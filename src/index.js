@@ -2,12 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Welcome from './Welcome';
+import WelcomeClass from './WelcomeClass';
+import LoginControl from './LoginControl';
 import reportWebVitals from './reportWebVitals';
+import NameForm from './Form';
+import FlavorForm from './SelectForm';
+import FilterableProductList from './FilterableProductList';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <FilterableProductList></FilterableProductList>
+    {/* <LoginControl></LoginControl>
+    <WelcomeClass name="Komal" />
+    <NameForm></NameForm>
+    <FlavorForm></FlavorForm> */}
   </React.StrictMode>
 );
 
